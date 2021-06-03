@@ -31,3 +31,11 @@ Joins
 problem 1: SELECT employees.Name, companies.Name, companies.Date FROM employees INNER JOIN companies where companies.Name = employees.Company;
 problem 2: SELECT employees.Name, companies.Name, companies.Date FROM employees INNER JOIN companies where companies.Name = employees.Company AND companies.Date < 2000;
 problem 3: SELECT companies.Name FROM employees INNER JOIN companies where companies.Name = employees.Company AND upper(employees.Role) = upper('graphic designer');
+
+Count and Filter
+
+problem 1: SELECT  name, Points FROM students WHERE Points = (SELECT max(Points) FROM students);
+problem 2: SELECT avg(Points) from students;
+problem 3: SELECT count(Points) from students WHERE Points = 500;
+problem 4: SELECT name from students WHERE name like '%s%';
+problem 5: SELECT name, Points FROM students ORDER by Points DESC;
