@@ -23,4 +23,11 @@ problem 1: INSERT INTO graduates(name, Age, Gender, Points)
             WHERE name = 'Layal';
 
 problem 2: UPDATE graduates SET Gradution = '08/09/2018';
+problem 3: DELETE FROM students WHERE name = 'Layal';
 
+
+Joins
+
+problem 1: SELECT employees.Name, companies.Name, companies.Date FROM employees INNER JOIN companies where companies.Name = employees.Company;
+problem 2: SELECT employees.Name, companies.Name, companies.Date FROM employees INNER JOIN companies where companies.Name = employees.Company AND companies.Date < 2000;
+problem 3: SELECT companies.Name FROM employees INNER JOIN companies where companies.Name = employees.Company AND upper(employees.Role) = upper('graphic designer');
